@@ -15,3 +15,5 @@ if (average >= 7):
   print("Student Passed !")
 else:
   print("Student Failed !")
+
+input("Press Enter to Exit ... ")
