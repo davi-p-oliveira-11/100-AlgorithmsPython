@@ -31,4 +31,5 @@ else:
     print(f"The employee {employee_name} has worked for {years_worked} years.")
     print(f"They will receive a 20% raise, resulting in a new salary of {new_salary:.2f}.")
 
+
 input("Press Enter to Exit ... ")
