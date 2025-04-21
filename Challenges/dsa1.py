@@ -272,3 +272,68 @@ class Graph:
             visited.add(vertex)
             for neighbor in self.graph.get(vertex, []):
                 self._dfs_recursive(neighbor, visited)
+
+
+# --- BINARY SEARCH TREE (BST) ---
+
+class BSTNode:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
+
+
+def insert_bst(root, key):
+    if root is None:
+        return BSTNode(key)
+    if key < root.key:
+        root.left = insert_bst(root.left, key)
+    else:
+        root.right = insert_bst(root.right, key)
+    return root
+
+
+def search_bst(root, key):
+    if root is None or root.key == key:
+        return root
+    if key < root.key:
+        return search_bst(root.left, key)
+    return search_bst(root.right, key)
+
+
+def inorder_bst(root):
+    if root:
+        inorder_bst(root.left)
+        print(root.key, end=" ")
+        inorder_bst(root.right)
+
+# --- RECURSION ---
+
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
+
+def fibonacci(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    return fibonacci(n - 1) + fibonacci(n - 2)
+
+def sum_array(arr):
+    if not arr:
+        return 0
+    return arr[0] + sum_array(arr[1:])
+
+def reverse_string(s):
+    if len(s) <= 1:
+        return s
+    return reverse_string(s[1:]) + s[0]
+
+def is_palindrome(s):
+    if len(s) <= 1:
+        return True
+    if s[0] != s[-1]:
+        return False
+    return is_palindrome(s[1:-1])
