@@ -16,3 +16,6 @@ if installment > salary * 0.3:
     print('Unfortunately, we cannot grant you the loan.')
 else:
     print('Congratulations, your loan has been approved!')
+
+
+input("Press Enter to exit ... ")
