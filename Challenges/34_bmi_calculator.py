@@ -10,3 +10,23 @@ above 40: Morbidly obese
 
 Note: BMI is calculated by the expression weight/height² (weight divided by height squared).
 '''
+
+weight = float(input('Enter your weight in kgs: '))
+height = float(input('Enter your height in meters: '))
+
+bmi = weight / height ** 2
+
+if bmi < 18.5:
+    print(f'Your BMI is {bmi:.2f} — you are underweight.')
+elif 18.5 <= bmi <= 24.9:
+    print(f'Your BMI is {bmi:.2f} — you have normal weight.')
+elif 25 <= bmi <= 29.9:
+    print(f'Your BMI is {bmi:.2f} — you are overweight.')
+elif 30 <= bmi <= 39.9:
+    print(f'Your BMI is {bmi:.2f} — you are obese.')
+elif bmi > 40:
+    print(f'Your BMI is {bmi:.2f} — you are morbidly obese.')
+
+
+
+input("Press Enter to exit ... ")
