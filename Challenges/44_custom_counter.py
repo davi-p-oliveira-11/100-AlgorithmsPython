@@ -6,3 +6,18 @@ Enter the last value: 10
 Enter the increment: 2
 Counting: 3 5 7 9 It's over!
 '''
+
+first_value = int(input("Enter the first value: "))
+last_value = int(input("Enter the first value: "))
+increment = int(input("Enter the first value: "))
+
+counter = first_value
+
+while counter <= last_value:
+  print(counter)
+  counter += increment
+
+
+print("It's over !")
+
+input("Press Enter to exit ... ")
