@@ -27,3 +27,6 @@ while counter < 20:
 print(f"Numbers drawn: {numbers}")
 print(f"Numbers greater than 5: {greater_than_5}")
 print(f"Numbers divisible by 3: {divisible_by_3}")
+
+
+input("Press Enter to exit ... ")
