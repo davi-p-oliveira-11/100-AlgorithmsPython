@@ -8,8 +8,8 @@ Counting: 3 5 7 9 It's over!
 '''
 
 first_value = int(input("Enter the first value: "))
-last_value = int(input("Enter the first value: "))
-increment = int(input("Enter the first value: "))
+last_value = int(input("Enter the last value: "))
+increment = int(input("Enter the increment value: "))
 
 counter = first_value
 
