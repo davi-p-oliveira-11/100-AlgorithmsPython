@@ -32,10 +32,10 @@ while counter < 10:
 
 average_age = sum / len(ages)
 
-print(average_age)
+print(f"{average_age:.0f}")
 
 print(f"Ages entered {ages}")
-print(f"Average age: {average_age}")
+print(f"Average age: {average_age:.0f}")
 print(f"People older than 18: {people_older_than_18}")
 print(f"People younger than 5: {people_younger_than_5}")
 print(f"Highest age recorded: {highest_age}")
