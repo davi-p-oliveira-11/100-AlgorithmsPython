@@ -30,7 +30,7 @@ while counter < 10:
   counter += 1
 
 
-average_age = sum / ages.length
+average_age = sum / len(ages)
 
 print(average_age)
 
