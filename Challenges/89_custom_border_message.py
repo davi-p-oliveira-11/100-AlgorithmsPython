@@ -14,3 +14,22 @@
       Python Studio
       ~~~~~~~~:::::::~~~~~~~  
 '''
+
+def generator(message: str, repetitions: int, border_type: int) -> None:
+    borders = [
+        '+-------=======------+',
+        '~~~~~~~~:::::::~~~~~~~',
+        '<<<<<<<<------->>>>>>>'
+    ]
+    
+    border = borders[border_type - 1] if 1 <= border_type <= len(borders) else borders[0]
+
+    for _ in range(repetitions):
+        print(border)
+        print(f'  {message}')
+    print(border)
+
+generator('Python Studio', 3, 2)
+
+
+input("Press Enter to exit ... ")
