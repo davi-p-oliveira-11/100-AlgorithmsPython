@@ -30,7 +30,7 @@ for i in range(8):
                 highest_age_indexes.append(i)
         else:
             print("Invalid input. Please enter a valid age.")
-            i -= 1  # doesn't work like JS, so this just triggers another loop iteration
+            i -= 1  
     except ValueError:
         print("Invalid input. Please enter a valid age.")
         continue
