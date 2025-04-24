@@ -11,7 +11,7 @@ def generator(message: str, repetitions: int) -> None:
         print(f'  {message}')
         print(line)
 
-generator('Learning TypeScript', 4)
+generator('Learning Python', 4)
 
 
 input("Press Enter to exit ... ")
