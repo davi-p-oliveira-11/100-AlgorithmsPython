@@ -4,3 +4,9 @@
       0   1   2   3   4   5   6   7
 '''
 
+arr = [999] * 8
+print(' '.join(map(str, arr)))
+
+print(' '.join(map(str, range(8))))
+
+input("Press Enter to exit ... ")
