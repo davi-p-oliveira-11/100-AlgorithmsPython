@@ -12,3 +12,6 @@ for counter in range(0, entered_number + 1):
     print(counter)
 
 print('END !')
+
+
+input("Press Enter to exit ... ")
