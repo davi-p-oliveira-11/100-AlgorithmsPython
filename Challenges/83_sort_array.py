@@ -5,5 +5,24 @@
       the sorted values.
 '''
 
+import random
+
+numbers4 = []
+size = 20
+min_val = 0
+max_val = 99
+
+sum3 = 0
+
+for _ in range(size):
+    random_number = random.randint(min_val, max_val)
+    numbers4.append(random_number)
+    sum3 += random_number
+
+print('Generated numbers:', numbers4)
+
+numbers4.sort()
+
+print('Sorted numbers:', numbers4)
 
 
