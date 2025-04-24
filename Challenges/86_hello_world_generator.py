@@ -8,3 +8,13 @@
      +-------=======------+
 '''
 
+def generator():
+    line = '+-------=======------+'
+    print(line)
+    print('  Hello, World !')
+    print(line)
+
+generator()
+
+
+input("Press Enter to exit ... ")
